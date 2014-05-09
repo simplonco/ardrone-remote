@@ -1,0 +1,25 @@
+/* CSS declarations go here */
+
+.trans{
+  background-color: transparent;
+  border: transparent;
+  color: transparent;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+.btn{
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  font-size: 45px;
+}
+.header{
+  background-color: #3498db;
+  margin-bottom: 40px;
+}
+.header h2{
+  padding-left: 15px;
+  color: white;
+}

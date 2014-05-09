@@ -1,0 +1,68 @@
+<head>
+  <title>Allianz-drone</title>
+</head>
+
+<body>
+  {{> gamepad}}
+</body>
+
+<template name="gamepad">
+
+    <div class="row header">
+      <div class="col-xs-12">
+      <h2>Allianz Drone</h2>
+      </div>
+    </div>
+
+    <div class="row text-center">
+
+      <div class="col-md-6 col-xs-6">
+        <button class="btn btn-success btn-lg trans"></button>
+        <button class="btn btn-primary btn-lg front">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </button>
+        <button class="btn btn-lg trans"></button>
+      </div>
+      <div class="col-md-6 col-xs-6">
+        <button class="btn btn-lg trans"></button>
+        <button class="btn btn-danger btn-lg stop">
+          <span class="glyphicon glyphicon-screenshot"></span>
+        </button>
+        <button class="btn btn-lg trans"></button>
+      </div>
+      <div class="col-md-6 col-xs-6">
+        <button class="btn btn-success btn-lg left">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </button>
+        <button class="btn btn-lg trans"></button>
+        <button class="btn btn-success btn-lg">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </button>
+      </div>
+      <div class="col-md-6 col-xs-6">
+        <button class="btn btn-danger btn-lg">
+          <span class="glyphicon glyphicon-refresh"></span>
+        </button>
+        <button class="btn btn-success btn-lg trans"></button>
+        <button class="btn btn-danger btn-lg">
+          <span class="glyphicon glyphicon-eye-open"></span>
+        </button>
+      </div>
+      <div class="col-md-6 col-xs-6">
+        <button class="btn btn-lg trans"></button>
+        <button class="btn btn-success btn-lg back">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </button>
+        <button class="btn btn-lg trans"></button>
+      </div>
+      <div class="col-md-6 col-xs-6">
+        <button class="btn btn-lg trans">OK</button>
+        <button class="btn btn-danger btn-lg start">
+          <span class="glyphicon glyphicon-plane"></span>
+        </button>
+        <button class="btn btn-lg trans">OK</button>
+      </div>
+
+    </div>
+
+</template>
