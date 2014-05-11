@@ -1,4 +1,6 @@
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
   <title>Allianz-drone</title>
 </head>
 
@@ -8,61 +10,87 @@
 
 <template name="gamepad">
 
-    <div class="row header">
-      <div class="col-xs-12">
-      <h2>Allianz Drone</h2>
+  <div class="portrait">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <br>
+        <div class="alert alert-info">
+      <h3 class="text-center">Désole, pour jouer avec le drone vous devez utilisez votre mobile en mode paysage</h3>
+      <h2 class="text-center">:)</h2>
+    </div>
       </div>
     </div>
+  </div>
 
-    <div class="row text-center">
+  <div class="landscape">
+
+    <div class="row no-margin text-center">
 
       <div class="col-md-6 col-xs-6">
-        <button class="btn btn-success btn-lg trans"></button>
-        <button class="btn btn-primary btn-lg front">
+        <button class="btn btn-lg trans"></button>
+
+        <button class="btn btn-dark btn-lg front select">
           <span class="glyphicon glyphicon-chevron-up"></span>
         </button>
+
         <button class="btn btn-lg trans"></button>
       </div>
       <div class="col-md-6 col-xs-6">
         <button class="btn btn-lg trans"></button>
-        <button class="btn btn-danger btn-lg stop">
-          <span class="glyphicon glyphicon-screenshot"></span>
+        <button class="btn btn-primary btn-lg up">
+          <span class="glyphicon glyphicon-arrow-up"></span>
         </button>
         <button class="btn btn-lg trans"></button>
       </div>
       <div class="col-md-6 col-xs-6">
-        <button class="btn btn-success btn-lg left">
+        <button class="btn btn-dark btn-lg left">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </button>
+
         <button class="btn btn-lg trans"></button>
-        <button class="btn btn-success btn-lg">
+
+        <button class="btn btn-dark btn-lg">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </button>
       </div>
       <div class="col-md-6 col-xs-6">
-        <button class="btn btn-danger btn-lg">
+        <button class="btn btn-primary btn-lg flip">
           <span class="glyphicon glyphicon-refresh"></span>
         </button>
-        <button class="btn btn-success btn-lg trans"></button>
-        <button class="btn btn-danger btn-lg">
-          <span class="glyphicon glyphicon-eye-open"></span>
+
+        <button class="btn btn-lg trans"></button>
+
+        <button class="btn btn-primary btn-lg foo">
+          <span class="glyphicon glyphicon-repeat"></span>
         </button>
       </div>
       <div class="col-md-6 col-xs-6">
         <button class="btn btn-lg trans"></button>
-        <button class="btn btn-success btn-lg back">
+        <button class="btn btn-dark btn-lg back">
           <span class="glyphicon glyphicon-chevron-down"></span>
         </button>
         <button class="btn btn-lg trans"></button>
       </div>
       <div class="col-md-6 col-xs-6">
-        <button class="btn btn-lg trans">OK</button>
-        <button class="btn btn-danger btn-lg start">
-          <span class="glyphicon glyphicon-plane"></span>
+        <button class="btn btn-lg trans"></button>
+        <button class="btn btn-primary btn-lg down">
+          <span class="glyphicon glyphicon-arrow-down"></span>
         </button>
-        <button class="btn btn-lg trans">OK</button>
+        <button class="btn btn-lg trans"></button>
       </div>
 
     </div>
+    <div class="row text-center no-margin margin">
+      <div class="col-xs-12">
+        <button class="btn btn-danger btn-lg square land">
+          Aterrisage
+        </button>
+        <button class="btn btn-success btn-lg square start">
+          Décollage
+        </button>
+      </div>
+    </div>
+
+  </div>
 
 </template>

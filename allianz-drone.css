@@ -1,25 +1,54 @@
 /* CSS declarations go here */
-
-.trans{
-  background-color: transparent;
-  border: transparent;
-  color: transparent;
+*:focus {
+    outline: none !important;
+}
+.trans, .trans:hover, .trans:active, .trans:focus{
+  background-color: transparent !important;
+  border: transparent !important;
+  color: transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+.btn-dark:active, .btn-dark:hover{
+  background-color: #3498db !important;
+}
+.btn-dark{
+  background-color: #34495e !important;
+  color: white !important;
 }
 html, body{
   width: 100%;
   height: 100%;
 }
-.btn{
-  width: 110px;
-  height: 110px;
+.btn:not(.square){
+  width: 65px;
+  height: 65px;
   border-radius: 100%;
-  font-size: 45px;
+  font-size: 30px;
+  border: none;
 }
-.header{
-  background-color: #3498db;
-  margin-bottom: 40px;
+.square{
+  padding: 10px 15px 10px 15px;
+  font-size: 1.3em;
+  margin-left: 10px;
+  border-radius: 3px;
 }
-.header h2{
-  padding-left: 15px;
-  color: white;
+.margin{
+  margin: 10px;
+}
+body{
+  padding-top: 3%;
+}
+.no-margin{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+@media only screen and (orientation:portrait){
+  .landscape {display:none;}
+  .portrait {display:block;}
+}
+
+@media only screen and (orientation:landscape){
+  .landscape {display:block;}
+  .portrait {display:none;}
 }

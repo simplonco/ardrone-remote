@@ -1,13 +1,25 @@
 Template.gamepad.events
-  'click .stop': ->
-    Meteor.call 'stop'
-  'click .start': ->
+  'mousedown .stop,touchstart .land': ->
+    Meteor.call 'land'
+  'mousedown .start,touchstart .start': ->
     Meteor.call 'takeoff'
-  'click .left': ->
+  'mousedown .left,touchstart .left': ->
     Meteor.call 'left'
-  'click .right': ->
+  'mousedown .right,touchstart .right': ->
     Meteor.call 'right'
-  'click .front': ->
+  'mousedown .front,touchstart .front': ->
     Meteor.call 'front'
-  'click .back': ->
+  'mousedown .back,touchstart .back': ->
     Meteor.call 'back'
+  'mousedown .up,touchstart .up': ->
+    Meteor.call 'up'
+  'mousedown .down,touchstart .down': ->
+    Meteor.call 'down'
+  'mousedown .flip,touchstart .flip': ->
+    Meteor.call 'flip'
+  'mousedown .foo,touchstart .foo': ->
+    Meteor.call 'foo'
+  'touchend, mouseup': ->
+    setTimeout ->
+      Meteor.call 'stop'
+    , 400

@@ -3,34 +3,31 @@ client  = arDrone.createClient({ip: '192.168.1.222'})
 
 Meteor.methods
   'takeoff': ->
-    console.log 'Start'
     client.takeoff()
-  'stop': ->
-    console.log 'Stop'
+  'debug': ->
+    console.log Math.floor(Math.random()*10000)
+  'land': ->
     client.stop()
     client.land()
+  'stop': ->
+    client.stop()
   'left': ->
-    console.log 'Left'
     client.left 0.1
-    this.clockwise 0.5
-    client.stop()
   'right': ->
-    console.log 'right'
     client.right 0.1
-    this.clockwise 0.5
-    client.stop()
   'front': ->
-    console.log 'Front'
     client.front 0.1
-    this.clockwise 0.5
-    client.stop()
   'back': ->
-    console.log 'Back'
     client.back 0.1
-    this.clockwise 0.5
-    client.stop()
+  'up': ->
+    client.up 0.1
+  'down': ->
+    client.down 0.1
   'flip': ->
     client.up 1
     client.animate 'flipLeft', 500
-    client.clockwise 0.5
+    client.stop()
+  'foo': ->
+    client.up 1
+    client.animate 'phiM30Deg', 1000
     client.stop()
